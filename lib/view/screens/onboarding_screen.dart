@@ -27,8 +27,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     imagePadding: EdgeInsets.zero,
   );
 
-  Widget _buildImage(String assetName, [double width = 350]) {
-    return Image.asset('assets/images/$assetName', width: width.w);
+  Widget _buildImage(String assetName, [double width = 350, double height = 300]) {
+    return Image.asset('assets/images/$assetName', width: width.w, height: height.h,);
   }
 
   @override
